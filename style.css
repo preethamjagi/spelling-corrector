@@ -1,9 +1,115 @@
-div{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.module {
+    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: "Lucida Handwriting", "Brush Script MT";
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 50px;
 }
-textarea{
-	margin-top: 15px;
-	width: 50%;
+
+.input {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.output {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+input {
+    width: 85%;
+    height: auto;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Lucida Handwriting", "Brush Script MT";
+    font-size: 15px;
+}
+
+button {
+    width: initial;
+    background-color: black;
+    color: #fdfd96;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Lucida Handwriting", "Brush Script MT";
+}
+
+#demo {
+    padding: 10px;
+    border: 1px dotted black;
+    border-radius: 8px;
+    height: 300px;
+    width: 70%;
+    overflow: auto;
+    text-align: justify;
+}
+
+#kemo {
+    border: 1px dotted black;
+    border-radius: 5px;
+    height: 300px;
+    width: 25%;
+    overflow: auto;
+    text-align: center;
+}
+
+#memo {
+    padding-left: 40px;
+    overflow: auto;
+    text-align: left;
+}
+
+li:hover {
+    color: orange;
+}
+
+@media screen and (max-width: 1000px) {
+    .module {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .input {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .output {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #demo {
+        height: 500px;
+        width: 100%;
+    }
+
+    #kemo {
+        height: 250px;
+        width: 100%;
+    }
 }
