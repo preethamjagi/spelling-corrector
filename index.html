@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-     <div>
-    	<input type="file">
-    	<textarea cols="30" rows="20"></textarea>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="test.js"></script>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+<div class="module">
+<h1 for="finp" style="text-align: center;">Spell Check</h1>
+<div class="input">
+	<input type="text" id="finp" name="finp" placeholder="Copy Paste here..."><br><br>
+	<button type="button" onclick="loadDoc()">Clicky!</button><br><br>
+</div>
+<div class="output">
+	<div id="demo"></div><br><br>
+    <div id="kemo">
+        <h3 style="color: black;">Suggestions</h3>
+        <div id="memo"></div><br><br>
     </div>
-    <script src="script.js"></script>
-  </body>
+</div>
+</div>
+</body>
 </html>
